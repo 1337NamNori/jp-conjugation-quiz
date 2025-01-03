@@ -1,0 +1,15 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  font-feature-settings: 'halt' on;
+  font-style: normal;
+}
