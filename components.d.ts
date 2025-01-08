@@ -8,8 +8,15 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     PButton: typeof import('primevue/button')['default']
+    PCard: typeof import('primevue/card')['default']
     PInputText: typeof import('primevue/inputtext')['default']
+    PListBox: typeof import('primevue/listbox')['default']
     PMenu: typeof import('primevue/menu')['default']
+    PMenubar: typeof import('primevue/menubar')['default']
+    PSelect: typeof import('primevue/select')['default']
+    PTab: typeof import('primevue/tab')['default']
+    PTabList: typeof import('primevue/tablist')['default']
+    PTabs: typeof import('primevue/tabs')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
