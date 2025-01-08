@@ -1,10 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import Lara from '@primevue/themes/lara'
+import Aura from '@primevue/themes/aura'
 import { createResolver } from 'nuxt/kit'
 import { definePreset } from '@primevue/themes'
 
 const { resolve } = createResolver(import.meta.url)
-const PrimeVuePreset = definePreset(Lara, {
+const PrimeVuePreset = definePreset(Aura, {
   semantic: {
     primary: {
       50: '{amber.50}',
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss'],
+  modules: ['@primevue/nuxt-module', '@nuxtjs/tailwindcss', '@pinia/nuxt', '@pinia-plugin-persistedstate/nuxt'],
   css: [resolve('./assets/styles/app.css')],
   primevue: {
     options: {
